@@ -13,16 +13,17 @@
 }
 
 /* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 2.4rem;
-  width: 2.4rem;
-}
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: black;
+  border: none;
+  outline: none;
   &-button {
-    margin-right: 2rem;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 50%;
   }
 }
 

@@ -1,3 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background: grey;
+  color: black;
+  font-weight: 300;
+  line-height: 1.6; }
+
 html {
   font-size: 62.5%; }
 
@@ -14,15 +31,16 @@ html {
   background: #373a47; }
 
 /* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 2.4rem;
-  width: 2.4rem; }
-
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7; }
+  background: black;
+  border: none;
+  outline: none; }
   .bm-cross-button {
-    margin-right: 2rem; }
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 50%; }
 
 /* General sidebar styles */
 .bm-menu {
