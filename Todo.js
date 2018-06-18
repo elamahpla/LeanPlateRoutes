@@ -1,5 +1,5 @@
 // First: Setup a routing folder/file
-// Second: Fix npm scripts so I don't need multiple terminal tabs
+// Second: Fix npm scripts so I don't need multiple terminal tabs --Done
   // 2.1: Get script from othe projects to finish this.
 // Third: Fill out sass folder, including base settings & some base variables
 // Fourth: Add a 'primary' File for structure. This will be a layout with grid that can be shared across multiple routes

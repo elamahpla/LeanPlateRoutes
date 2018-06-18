@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass src/sass/main.scss css/style.css -w",
+    "watch:sass": "node-sass src/sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass src/sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
     "start": "webpack-dev-server --config ./webpack.config.js src/sass/main.scss -w",
-    "test": "echo \"No test specified\" && exit 0",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production"
   },
@@ -14,10 +15,13 @@
   "author": "Joey Robinson <joeyrobinsondev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^7.2.6",
     "babel-core": "^6.23.1",
     "babel-loader": "^7.1.2",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-2": "^6.22.0",
+    "postcss": "^6.0.22",
+    "postcss-cli": "^5.0.1",
     "react-hot-loader": "^3.1.3",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.4.1"
