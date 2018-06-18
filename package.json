@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass src/sass/main.scss css/style.css -w",
-    "start": "webpack-dev-server --config ./webpack.config.js",
+    "start": "webpack-dev-server --config ./webpack.config.js src/sass/main.scss -w",
     "test": "echo \"No test specified\" && exit 0",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production"
@@ -30,7 +30,7 @@
     "react": "^16.2.0",
     "react-burger-menu": "^2.5.2",
     "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2",
+    "react-router-dom": "^4.3.1",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.2"
   }
