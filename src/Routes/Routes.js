@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Home from '../Components/Home/Home';
 import Contact from '../Components/Contact/Contact';
 import About from '../Components/About/About';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import CollapsingSidebar from '../Containers/CollapsingSidebar/CollapsingSidebar';
 
 class Routes extends Component {
